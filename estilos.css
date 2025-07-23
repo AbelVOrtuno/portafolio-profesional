@@ -1,0 +1,7 @@
+.hero{
+    height: 100vh;
+    background-image: url("assets/portada.png");
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
