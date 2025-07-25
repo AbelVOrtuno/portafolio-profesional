@@ -1,0 +1,45 @@
+.portada
+    position: fixed
+    top 0
+    left 0
+    width 100%
+    height: 100%
+    background: linear-gradient(135deg #111 #222)
+    color white
+    centrar-flex()
+    font-size: 3rem
+    transform-origin: left
+    transition: transform 1s ease-in-out, opacity 0.9s ease 
+
+    &.cerrar
+        transform rotateY(90deg)
+        opacity 0
+        pointer-events: none
+
+.contenido
+    opacity 0
+    transform rotateY(-90deg)
+    transform-origin right
+    transition transform 1s ease, opacity 0.8s ease
+    pointer-events: none
+    position relative
+    padding 2rem
+    background: #fff
+    min-height: 100vh
+
+    &.abrir
+        opacity: 1
+        transform rotateY(0)
+        pointer-events auto
+#volver
+    position normal
+    top 1rem
+    left 1rem
+    padding 0.5rem 1rem
+    font-size 1rem
+    cursor pointer
+img 
+    width 100%
+    height: 900px
+    cursor pointer
+    margin: 0 auto

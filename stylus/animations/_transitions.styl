@@ -1,0 +1,35 @@
+// Fade in de entrada //
+@keyframes fadeInZoom
+    0%
+        opacity 0
+        transform scale(1.2)
+    100%
+        opacity 1
+        transform scale(1)
+
+// Animacion de salida //
+@keyframes fadeOutZoom 
+    0%
+        opacity 1
+        transform scale(1)
+    100%
+        opacity 0
+        transform scale(0.8)                                        
+        
+// Para mostrar el contenido del portafolio //
+@keyframes fadeInContent 
+    0%
+        opacity 0
+        transform translateY(30px)
+    100%
+        opacity 1
+        transform translateY(0)
+
+// Para ocultar el portafolio al volver a la portada //
+@keyframes fadeOutContent 
+    0%
+        opacity 1
+        transform translateY(0)
+    100%
+        opacity 0
+        transform translateY(30px)
