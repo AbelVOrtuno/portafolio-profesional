@@ -4,19 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Portafolio | Premium Abel Valverde</title>
 </head>
 <body>
 
     <!--Pantalla de Bienvenida-->
-    <div class="splash" id="splash">
+    <div id="splash" class="portada">
         <img src="assets/portada.png" alt="Bienvenida a mi Portafolio">
     </div>
 
-    <header class="hero">
-        <div class="hero-content">
-            
-        </div>
-    </header>
+    <!--Contenido del Portafolio-->
+    <div class="contenido" id="content">
+        <h1>¡Hola! Bienvenido a mi portafolio!!</h1>
+        <button id="volver" class="volver">Portada</button>
+
+        <!--Encabezado-->
+        <header class="header">
+            <div class="logo">Abel Valverde</div>
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Abrir Menu"></button>
+                <ul class="nav-list">
+                    <ul><a href="#sobre-mi">Sobre Mi</a></ul>
+                    <ul><a href="#proyectos">Proyectos</a></ul>
+                    <ul><a href="#servicios">Servicios</a></ul>
+                    <ul><a href="#contacto">Contactos</a></ul>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Hero o fondo -->
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Diseño y desarrollo web Profesional</h1>
+                <p>Responsive y adaptable a diferentes tamaños de pantalla tambien con animaciones dinamicas y sitios con rendimiento optimizado</p>
+
+                <a href="#contacto" class="btn-primario">Hablemos</a>
+            </div>
+            <div class="hero-img">
+                <img src="assets/miHero.png" alt="Imagen representativa de banner">
+            </div>
+        </section>
+
+        <!--Sobre Mi-->
+        <section id="sobre-mi" class="sobre-mi">
+            <h2>Sobre Mi</h2>
+            <p>Soy diseñador web aprendiz y me encanta lo que es el desarrollo web,enfocado en crear experiencias atractivas
+                y funcionales.Por ejemplo lo que son sitios web intuitivos y faciles de recorrer que permiten tener una 
+                excelente experiencia de usuario.Ahora mismo me estoy especializando en que sitios de este tipo asi como landing page,blogs
+                y paginas estaticas esten optimizadas tanto al SEO (Posisionamiento web) como a distintos tipos y 
+                tamaños de pantalla de diferentes dispositivos.
+            </p>
+            <p>Ahora mismo estoy profundizando en herramientas de diseño como <cite class="tools">figma,canva y penpot </cite> que permiten crear prototipos funcionales o diseños preliminares de lo que 
+            seria nuestro sitio web.Tambien manejamos estilos 100% CSS junto con los preprocesadores mas populares y modernos que son <cite class="tools">SASS,STYLUS y LESS</cite>.Todas estas poderosas herramientas permiten que programar sea mas divertido
+            y puedas centrarte en crear diseños mas atractivos e innovadores.</p>
+
+            <p>¿Te gustaria conocer los ultimos proyectos que he desarrollado?Bueno,en la siguiente seccion podras ver una pequeña galeria de los proyectos que he diseñado y desarrollado,tambien de las tecnologias que necesite y que tal vez podrias requerir para tu siguiente proyecto.</p>
+        </section>
+
+        <!--Proyectos-->
+        <section id="proyectos" class="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="grid-proyectos">
+
+            </div>
+        </section>
+
+        <!--Servicios-->
+        <section id="servicios" class="servicios">
+            <h2>Servicios y Requerimientos </h2>
+            <ul class="lista-servicios">
+                <li>Correccion de landing Page HTML Y CSS</li>
+                <li>Desarrollo Web</li>
+                <li>E-commerce</li>
+                <li>Optimizacion y SEO</li>
+            </ul>
+        </section>
+
+        <!--Contacto-->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form class="form-contacto">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+
+                <label for="correo">Email</label>
+                <input type="email" name="email" placeholder="Tu Correo" required>
+
+                <textarea name="mensaje" id="notas" placeholder="Escribe tu comentario o dudas" cols="50" rows="10"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!--Footer-->
+        <footer class="pie">
+            <p>&copy; 2025 Diseñado y Desarrollado por Abel Valverde.Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="JS/main.js"></script> 
 </body>
 </html>
